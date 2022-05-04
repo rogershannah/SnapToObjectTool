@@ -63,7 +63,7 @@ def showWindow():
         isPlane = False
         #check if the surface is a plane
         for node in cmds.listHistory(selected[0]):
-            if cmds.nodeType(node) == "polyDisc" or cmds.nodeType(node) == "nurbsPlane":
+            if cmds.nodeType(node) == "polyDisc" or cmds.nodeType(node) == "nurbsPlane" or cmds.nodeType(node) == "polyPlane":
                 print(cmds.nodeType(node))
                 isPlane = True
                 t.surface=selected[0]  # transform of the selected object
@@ -130,7 +130,6 @@ def showWindow():
             t.rotate = True
         else:
             t.rotate = False
-        print(t.rotate)
 
 
 
@@ -178,7 +177,10 @@ def showWindow():
                 snapToAlign(pos, obj)
 
                 if t.rotate:
-                    cmds.rotate(rotX, rotY, rotY, obj)
+                    print(rotX)
+                    print(rotY)
+                    print(rotZ)
+                    cmds.rotate(rotX, rotY, rotZ, obj)
 
         
          # apply button clicked
