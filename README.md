@@ -6,6 +6,10 @@
 Snap to surface tool allows the user to select objects and align them to the center of a selected plane in either the X, Y, or Z direction. Optionally, the user can rotate the objects in the direction of the plane.
 
 
+https://github.com/rogershannah/SnapToPlaneTool/assets/43558247/9f8e76d3-c0dd-4b1c-a599-45131c547d9a
+
+
+
 ## Installation and Use
 1. Download the files in zip folder
 
